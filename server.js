@@ -8,6 +8,10 @@ const prisma = new PrismaClient();
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('Backend is running ✅');
+});
+
 // Get all tasks
 app.get('/tasks', async (req, res) => {
   const tasks = await prisma.task.findMany();
@@ -41,7 +45,7 @@ app.delete('/tasks/:id', async (req, res) => {
   res.status(204).end();
 });
 
-const port = 3000;
+const port = process.env.PORT || 3000; 
 app.listen(port, () =>
-  console.log(` Backend running with SQLite at http://localhost:${port}`)
+  console.log(`Backend running with SQLite at http://localhost:${port}`)
 );
