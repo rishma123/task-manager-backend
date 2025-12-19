@@ -67,7 +67,7 @@ Method	Endpoint	Description
 GET/tasks - Fetch all tasks
 POST/tasks - Create a new task
 PUT/tasks/:id - Update an existing task
-DELETE/tasks/:id	Delete a task
+DELETE/tasks/:id - Delete a task
 
 🧪 Testing
 
