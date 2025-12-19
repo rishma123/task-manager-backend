@@ -64,11 +64,11 @@ http://localhost:PORT
 
 🔌 API Overview
 Method	Endpoint	Description
-GET	/tasks	Fetch all tasks
-POST	/tasks	Create a new task
-PUT	/tasks/:id	Update an existing task
-DELETE	/tasks/:id	Delete a task
-GET	/health	Health check endpoint
+GET/tasks - Fetch all tasks
+POST/tasks - Create a new task
+PUT/tasks/:id - Update an existing task
+DELETE/tasks/:id	Delete a task
+
 🧪 Testing
 
 API endpoints tested using Postman
